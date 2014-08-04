@@ -1,0 +1,99 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int T,X=0,Y=0,a,b,c,d;
+    char y[3]={'Y','E','S'},n[2]={'N','O'}, *k;
+    cin>>a;
+    for(T=0;T<=a;T++)
+    {
+    cout<<endl;
+    cin>>b;
+    cout<<" ";
+    cin>>c;
+    cout<<b<<" "<<c;
+    for(d=1;d<=10;d++)
+    {
+    /*(if((d>b)||(d=c))
+    {
+    break;
+    }*/                  
+    if((b==X)&&(c==Y))
+    {
+    k=y;
+    cout<<endl<<"YES";
+    }
+    else
+    {
+    do{
+        X++;
+        if((b==X)&&(c==Y))
+    {
+    cout<<endl<<y;
+    }
+}while(X<(X+d));
+    d++;
+    }
+    if((b==X)&&(c==Y))
+    {
+    cout<<endl<<y;
+    }
+    else
+    {
+    do{
+        Y++;
+        if((b==X)&&(c==Y))
+    {
+    k=y;
+    cout<<endl<<k;
+    }
+}while(Y<(Y+d));
+    d++;
+}
+    if((b==X)&&(c==Y))
+    {
+    k=y;
+    cout<<endl<<k;
+    }
+    else
+    {
+    do{
+        X--;
+        if((b==X)&&(c==Y))
+    {
+    k=y;
+    cout<<endl<<k;
+    }
+}while(X>(X-d));
+    d++;
+} 
+    if((b==X)&&(c==Y))
+    {
+     k=y;
+    cout<<endl<<k;
+    }
+    else
+    {
+    do{
+        Y--;
+        if((b==X)&&(c==Y))
+    {
+        k=y;
+    cout<<endl<<k;
+    }
+}while(Y>(Y-d));
+}
+    if((b==X)&&(c==Y))
+    {
+    k=y;
+    cout<<endl<<y;
+    }
+    }
+    if(k!=y)
+    {
+    cout<<endl<<n;
+    }             
+    }
+    cin.get();
+    return 0;
+}
